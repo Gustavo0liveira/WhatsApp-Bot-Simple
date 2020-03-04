@@ -15,7 +15,7 @@ class WhatsappBot:
 
         time.sleep(30)
         
-        for pessoa in self.pessoas:
+        for pessoa in self.pessoas:#este for fica responsavel por fazer isso com todos os contatos que foram cadastrados na variavel pessoas
             pessoa = self.driver.find_element_by_xpath(f"//span[@title='{pessoa}']")
             pessoa.click()#clica no contato indicado pelo nome
 
